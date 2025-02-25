@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Romántica</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+          
+        }
+        .text {
+            font-size: 50px;
+            font-weight:bold ;
+            color: rgb(56, 12, 218);
+            z-index: 20;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+        .button {
+            position: absolute;
+            padding: 25px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .yes1 {
+            top: 50%;
+            left: 10%;
+            background-color: #5a1db1;
+            color: white;
+            transform: translateY(-50%);
+        }
+        .yes2 {
+            top: 50%;
+            right: 10%;
+            background-color: #5a1db1;
+            color: white;
+            transform: translateY(-50%);
+        }
+        .no {
+            bottom: 8%;
+            right: 5%;
+            background-color: #a94952;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .text {
+                font-size: 20px;
+            }
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            .text {
+                font-size: 18px;
+            }
+            .button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            .yes1, .yes2, .no {
+                top: unset;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 10px;
+            }
+            .yes1 {
+                top: 40%;
+            }
+            .yes2 {
+                top: 50%;
+            }
+            .no {
+                top: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">¿Puedo ser tu pololo?</div>
+    <div class="container">
+        <img src="/html/imagenes/snoopy.jpg" alt="Propuesta Romántica" class="image">
+        <button class="button yes1">Sí</button>
+        <button class="button yes2">Sí</button>
+        <button class="button no">No</button>
+    </div>
+</body>
+</html>
